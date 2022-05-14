@@ -1,0 +1,219 @@
+/* SideDrawer */
+.side-drawer {
+    background: #fff;
+    height: 100%;
+    position: fixed;
+    width: 70%;
+    right: 0;
+    z-index: 200;
+    max-width: 400px; /*  chiều dài lớn nhất của nó là 400px */
+    top: 0;
+}
+.side-drawer ul  {
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    height: 100%;
+}
+.side-drawer ul a {
+    text-decoration: none;
+    color: #521751;
+    font-size: 1.2rem;
+}
+.side-drawer li {
+    margin: 3rem 0; /* khoản cách trái phải */
+}
+.side-drawer a:hover,
+.side-drawer a:active {
+    color: #fa923f;
+}
+.icon-drawer {
+    cursor: pointer;
+}
+
+/* Back Drop Nav */
+.back__drop__nav {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 10;
+    cursor: pointer;
+    
+}
+
+/* CartDrawer */
+.CartDrawer {
+    width: 370px;
+    min-height: 400px;
+    position: fixed;
+    z-index: 200;
+    top: 37px;
+    right: 100px;
+    background-color: rgb(253, 255, 255);
+    border: 2px solid rgb(218, 215, 215);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+.cart__item {
+    width: 100%;
+    margin-top: 2px;
+    height: 100px;
+}
+.btn-delete-item {
+    border: none;
+    border-radius: 3px;
+}
+.btn-seeMore-cart{
+    position: absolute;
+    bottom: 7px;
+    right: 9px;
+    width: 110px;
+    height: 31px;
+    background: #009e7f;
+    text-align: center;
+}
+.btn-seeMore-cart {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 30px;
+}
+.btn-seeMore-cart:hover {
+    background: #10b392;
+    color: #fff;
+}
+
+/* Backdrop */
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+/* Card product  */
+.card-product-body {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+    width: 14rem;
+    margin-left: 18px;
+    margin-right: 1px;
+    position: relative;
+    background: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 20px;    
+}
+.cc {
+    --card-product-load-delay: 700ms;
+    animation: card-product-load 300ms ease-in var(--card-product-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+.card-product-body:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+
+
+.button-buy-card {
+    width: 65px;
+    border-radius: 4px;
+    height: 35px;
+    background: #7FAD39;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    margin: 10px;
+}
+.button-buy-card p {
+    margin: auto;
+}
+
+/* Slider product */
+.wrap__slider__product {
+    width: 100%;
+}
+.btn-arrow-slider {
+    /* background: red; */
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    top: 200px;
+    z-index: 100;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+}
+.btn-next-slider{
+    right:  0px;
+    background: #7FAD39;
+    position: absolute;
+    height: 48px;
+    width: 26px;
+}
+.btn-prev-slider{
+    left: 0px;
+    background: #7FAD39;
+    position: absolute;
+    height: 48px;
+    width: 26px;
+}
+.box__slider__product {
+    width: 100%;
+}
+.box__slider__product .wrap__item__slider {
+    /* background: #7FAD39;  */
+}
+.wrap__item__slider .item__slider {
+    margin: 10px 0px 10px 7px;
+    width: 95%;
+    cursor: pointer;
+}
+
+@keyframes card-product-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 46.1875em)  {
+    .card-product-body {
+        width: 150px;
+        margin-left: 10px;
+        margin-top: 20px;
+
+    }
+    .card-product-body .card-title {
+        font-size: 10px;
+    }
+    .card-product-body .card-text {
+        font-size: 10px;
+    }
+    .button-buy-card {
+        width: 55px;
+        height: 30px;
+        margin: 10px;
+        font-size: 12px;
+    }
+
+}
+
+/* btn load more */
+.box-btn-card-body-home {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
