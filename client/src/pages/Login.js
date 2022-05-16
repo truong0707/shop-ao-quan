@@ -43,12 +43,12 @@ const Login = () => {
                 <form className="Login col-md-8 col-lg-4 col-11" onClick={submitHandler} >
                     <input
                         type="email"
-                        placeholder="Email"
+                        placeholder="truongnguyendep@gmail.com"
                         onChange={(e) => setEmail(e.target.value)}
                     />
                     <input
                         type="password"
-                        placeholder="Password"
+                        placeholder="truong19062001"
                         onChange={(e) => setPassword(e.target.value)}
                     />
                     <button type="submit">Đăng Nhập</button>
