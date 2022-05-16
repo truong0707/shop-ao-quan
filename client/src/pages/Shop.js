@@ -1,10 +1,13 @@
 import React from 'react';
 import Footer from '../components/footer/Footer';
+import BodyShop from '../components/shop/BodyShop';
+import HeaderShop from '../components/shop/HeaderShop';
 
 export default function Shop() {
   return (
     <div className='shop__page'>
-      <p style={{ marginTop: '70px' }}>cc</p>
+      <HeaderShop />
+      <BodyShop/>
       <Footer />
     </div>
   )

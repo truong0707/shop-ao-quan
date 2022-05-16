@@ -23,7 +23,6 @@ import CartState from "./store/cart/CartState";
 import CartDrawer from "./components/reuseComponents/cartDrawer/CartDrawer";
 import PostBlogDetail from "./pages/PostBlogDetail";
 import Login from "../src/pages/Login";
-import CC from "./pages/CC";
 import './App.css';
 import { useSelector } from "react-redux";
 
@@ -79,7 +78,6 @@ function App() {
               <Route exact path="/news" element={<News />} />
               <Route exact path="/contacts" element={<Contacts />} />
               <Route exact path="/login" element={<Login />} />
-              <Route exact path="/cc" element={<CC />} />
               <Route exact path="/signup" element={user ? <Navigate to='/profile' /> : <Login />} />
               <Route exact path="/detail-product/:productId" element={user ? <DetailProduct /> : <Navigate to='/login' />}></Route>
               <Route exact path="/Blog/:ParamNameProduct" element={user ? <PostBlogDetail /> : <Navigate to='/login' />}></Route>

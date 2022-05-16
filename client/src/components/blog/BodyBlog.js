@@ -62,7 +62,7 @@ export default function BodyBlog() {
                                             <p style={{ fontSize: '15px', color: '#9A9C9A' }} className="card-text">{data.descriptionProduct}</p>
 
                                             <Link className='readMore' to={`/Blog/${data.nameProduct}`}>
-                                                <div style={{ position: 'absolute', bottom: '30px'}} className='btn-read-more'><p>READ MORE</p></div>
+                                                <div style={{marginTop:'50px'}} className='btn-read-more'><p>READ MORE</p></div>
                                             </Link>
                                         </div>
                                     </div>
