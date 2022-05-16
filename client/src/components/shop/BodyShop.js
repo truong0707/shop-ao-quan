@@ -18,7 +18,7 @@ export default function BodyShop() {
   return (
     <div className="body__shop__page">
       {/* <h1>Top Category</h1> */}
-      <div className='wrap__top__category' style={{ display: 'flex' }}>
+      <div className='wrap__top__category' style={{ display: 'flex', marginTop: '5 0px' }}>
         <div className='item__category'>
           <p><img src={Activewear} alt='' /></p>
           <p className='title_item_category'>Activewear</p>
@@ -67,7 +67,8 @@ export default function BodyShop() {
           <h1 style={{ fontSize: '15px' }}>CATEGORIES</h1>
           <p style={{ width: '95%', height: '1px', background: '#E6E6E6' }}></p>
 
-          <p>color</p>
+          {/* COLOR */}
+          <p>COLOR</p>
           <p style={{ width: '95%', height: '1px', background: '#E6E6E6' }}></p>
           <div style={{ display: 'flex', flexWrap: 'wrap' }}>
             {
@@ -77,21 +78,71 @@ export default function BodyShop() {
             }
           </div>
 
+          {/* SIZE */}
           <p>SIZE</p>
           <p style={{ width: '95%', height: '1px', background: '#E6E6E6' }}></p>
           <div style={{ display: 'flex', flexWrap: 'wrap' }}>
             {
               size.map((size) => (
-                <div style={{ width: "15%", height: "34px", marginRight: '10px', marginTop: "10px", border: "1px solid #E6E6E6"}}><p>{size}</p></div>
+                <div style={{ width: "15%", height: "34px", marginRight: '10px', marginTop: "10px", border: "1px solid #E6E6E6" }}><p>{size}</p></div>
               ))
             }
           </div>
 
-          <p style={{marginTop:"20px"}}>PRICE</p>
+          {/* PRICE */}
+          <p style={{ marginTop: "20px" }}>PRICE</p>
+
+          {/* BRAND */}
+          
 
         </div>
 
-        <div style={{ flex: '3', background: '' }}>đ</div>
+        {/* product */}
+        <div style={{ flex: '3' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+            <div class="card" style={{ width: "14rem", marginRight: '3px', marginLeft: '5px', marginTop: '10px' }}>
+              <img style={{ height: '250px' }} src="https://cdn.shopify.com/s/files/1/1825/4753/products/product-clothes-13_360x.jpg?v=1606130852" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+
+            <div class="card" style={{ width: "14rem", marginRight: '3px', marginLeft: '5px', marginTop: '10px' }}>
+              <img style={{ height: '250px' }} src="https://cdn.shopify.com/s/files/1/1825/4753/products/product-clothes-13_360x.jpg?v=1606130852" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+
+            <div class="card" style={{ width: "14rem", marginRight: '3px', marginLeft: '5px', marginTop: '10px' }}>
+              <img style={{ height: '250px' }} src="https://cdn.shopify.com/s/files/1/1825/4753/products/product-clothes-13_360x.jpg?v=1606130852" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+
+            <div class="card" style={{ width: "14rem", marginRight: '3px', marginLeft: '5px', marginTop: '10px' }}>
+              <img style={{ height: '250px' }} src="https://cdn.shopify.com/s/files/1/1825/4753/products/product-clothes-13_360x.jpg?v=1606130852" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+
+            <div class="card" style={{ width: "14rem", marginRight: '3px', marginLeft: '5px', marginTop: '10px' }}>
+              <img style={{ height: '250px' }} src="https://cdn.shopify.com/s/files/1/1825/4753/products/product-clothes-13_360x.jpg?v=1606130852" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+
+            <div class="card" style={{ width: "14rem", marginRight: '3px', marginLeft: '5px', marginTop: '10px' }}>
+              <img style={{ height: '250px' }} src="https://cdn.shopify.com/s/files/1/1825/4753/products/product-clothes-13_360x.jpg?v=1606130852" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
