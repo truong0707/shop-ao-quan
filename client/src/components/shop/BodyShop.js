@@ -100,45 +100,45 @@ export default function BodyShop() {
         {/* product */}
         <div style={{ flex: '3' }}>
           <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-            <div class="card" style={{ width: "14rem", marginRight: '3px', marginLeft: '5px', marginTop: '10px' }}>
-              <img style={{ height: '250px' }} src="https://cdn.shopify.com/s/files/1/1825/4753/products/product-clothes-13_360x.jpg?v=1606130852" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div className="card" style={{ width: "14rem", marginRight: '3.5px', marginLeft: '5px', marginTop: '10px' }}>
+              <img style={{ height: '230px'}} src="https://cf.shopee.vn/file/2a6006c701cbd92c47041b105386814a_tn" className="card-img-top" alt="..." />
+              <div className="card-body">
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
 
-            <div class="card" style={{ width: "14rem", marginRight: '3px', marginLeft: '5px', marginTop: '10px' }}>
-              <img style={{ height: '250px' }} src="https://cdn.shopify.com/s/files/1/1825/4753/products/product-clothes-13_360x.jpg?v=1606130852" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div className="card" style={{ width: "14rem", marginRight: '3.5px', marginLeft: '5px', marginTop: '10px' }}>
+              <img style={{ height: '230px'}} src="https://cf.shopee.vn/file/2a6006c701cbd92c47041b105386814a_tn" className="card-img-top" alt="..." />
+              <div className="card-body">
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
 
-            <div class="card" style={{ width: "14rem", marginRight: '3px', marginLeft: '5px', marginTop: '10px' }}>
-              <img style={{ height: '250px' }} src="https://cdn.shopify.com/s/files/1/1825/4753/products/product-clothes-13_360x.jpg?v=1606130852" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div className="card" style={{ width: "14rem", marginRight: '3.5px', marginLeft: '5px', marginTop: '10px' }}>
+              <img style={{ height: '230px'}} src="https://cf.shopee.vn/file/2a6006c701cbd92c47041b105386814a_tn" className="card-img-top" alt="..." />
+              <div className="card-body">
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
 
-            <div class="card" style={{ width: "14rem", marginRight: '3px', marginLeft: '5px', marginTop: '10px' }}>
-              <img style={{ height: '250px' }} src="https://cdn.shopify.com/s/files/1/1825/4753/products/product-clothes-13_360x.jpg?v=1606130852" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div className="card" style={{ width: "14rem", marginRight: '3.5px', marginLeft: '5px', marginTop: '10px' }}>
+              <img style={{ height: '230px'}} src="https://cf.shopee.vn/file/2a6006c701cbd92c47041b105386814a_tn" className="card-img-top" alt="..." />
+              <div className="card-body">
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
 
-            <div class="card" style={{ width: "14rem", marginRight: '3px', marginLeft: '5px', marginTop: '10px' }}>
-              <img style={{ height: '250px' }} src="https://cdn.shopify.com/s/files/1/1825/4753/products/product-clothes-13_360x.jpg?v=1606130852" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div className="card" style={{ width: "14rem", marginRight: '3.5px', marginLeft: '5px', marginTop: '10px' }}>
+              <img style={{ height: '230px'}} src="https://cf.shopee.vn/file/2a6006c701cbd92c47041b105386814a_tn" className="card-img-top" alt="..." />
+              <div className="card-body">
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
 
-            <div class="card" style={{ width: "14rem", marginRight: '3px', marginLeft: '5px', marginTop: '10px' }}>
-              <img style={{ height: '250px' }} src="https://cdn.shopify.com/s/files/1/1825/4753/products/product-clothes-13_360x.jpg?v=1606130852" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div className="card" style={{ width: "14rem", marginRight: '3.5px', marginLeft: '5px', marginTop: '10px' }}>
+              <img style={{ height: '230px'}} src="https://cf.shopee.vn/file/2a6006c701cbd92c47041b105386814a_tn" className="card-img-top" alt="..." />
+              <div className="card-body">
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
           </div>

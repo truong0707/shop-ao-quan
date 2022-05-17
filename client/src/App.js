@@ -4,7 +4,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 /* import components */
 import Home from "./pages/Home";
@@ -24,13 +24,18 @@ import CartDrawer from "./components/reuseComponents/cartDrawer/CartDrawer";
 import PostBlogDetail from "./pages/PostBlogDetail";
 import Login from "../src/pages/Login";
 import './App.css';
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 
 
 function App() {
   /* check user */
-  const user = useSelector((state) => state.userLogin.loading);
-  // const user = true
+  // const user = useSelector((state) => state.userLogin.loading);
+  const getuser = localStorage.getItem("userInfo");
+  const [user, setUser] = useState(false);
+
+  useEffect(() => {
+    setUser(true)
+  }, [getuser])
 
 
   /* xử lý đóng mở thanh menu nav */
@@ -79,8 +84,8 @@ function App() {
               <Route exact path="/contacts" element={<Contacts />} />
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/signup" element={user ? <Navigate to='/profile' /> : <Login />} />
-              <Route exact path="/detail-product/:productId" element={user ? <DetailProduct /> : <Navigate to='/login' />}></Route>
-              <Route exact path="/Blog/:ParamNameProduct" element={user ? <PostBlogDetail /> : <Navigate to='/login' />}></Route>
+              <Route exact path="/detail-product/:productId" element={user ? <DetailProduct /> : <Navigate to='/login' />} />
+              <Route exact path="/Blog/:ParamNameProduct" element={user ? <PostBlogDetail /> : <Navigate to='/login' />} />
             </Routes>
           </div>
         </Router>

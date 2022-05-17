@@ -79,10 +79,10 @@ export default function BodyHome() {
                 <div className='container-fluid content__body__home'>
                     <BoundaryLineText />
                     <div style={{ display: 'flex', flexWrap: 'wrap', width: '100%' }}>
-                        <div class="card" style={{ width: '360px', marginLeft: '20px', marginRight: 'auto', borderRadius: '0px' }}>
-                            <img src="https://cdn.shopify.com/s/files/1/0071/4755/2866/files/custom-block-1-compressor_800x_crop_center.jpg?v=1541556010" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div className="card" style={{ width: '360px', marginLeft: '20px', marginRight: 'auto', borderRadius: '0px' }}>
+                            <img src="https://cdn.shopify.com/s/files/1/0071/4755/2866/files/custom-block-1-compressor_800x_crop_center.jpg?v=1541556010" className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
 
                             {/* btn shop now */}
@@ -92,21 +92,21 @@ export default function BodyHome() {
                             />
                         </div>
 
-                        <div class="card" style={{ width: '360px', marginLeft: '20px', marginRight: 'auto', borderRadius: '0px' }}>
-                            <img src="https://cdn.shopify.com/s/files/1/0071/4755/2866/files/custom-block-2-compressor_800x_crop_center.jpg?v=1541556026" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div className="card" style={{ width: '360px', marginLeft: '20px', marginRight: 'auto', borderRadius: '0px' }}>
+                            <img src="https://cdn.shopify.com/s/files/1/0071/4755/2866/files/custom-block-2-compressor_800x_crop_center.jpg?v=1541556026" className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                             <Button
                                 classbtnType='button-shop-now-body-home'
                                 contentButton='Shop now'
                             />
-                        </div>
+                        </div>  
 
-                        <div class="card" style={{ width: '360px', marginLeft: '20px', marginRight: 'auto', borderRadius: '0px' }}>
-                            <img src="https://cdn.shopify.com/s/files/1/0071/4755/2866/files/custom-block-3-compressor_800x_crop_center.jpg?v=1541556068" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div className="card" style={{ width: '360px', marginLeft: '20px', marginRight: 'auto', borderRadius: '0px' }}>
+                            <img src="https://cdn.shopify.com/s/files/1/0071/4755/2866/files/custom-block-3-compressor_800x_crop_center.jpg?v=1541556068" className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                             <Button
                                 classbtnType='button-shop-now-body-home'

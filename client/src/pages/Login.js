@@ -13,7 +13,6 @@ import Error from "../components/Loading&Error/Error";
 const Login = () => {
     const location = useLocation()
     const navigate = useNavigate();
-    window.scrollTo(0, 0);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -48,7 +47,7 @@ const Login = () => {
                     />
                     <input
                         type="password"
-                        placeholder="truong19062001"
+                        placeholder="19062001"
                         onChange={(e) => setPassword(e.target.value)}
                     />
                     <button type="submit">Đăng Nhập</button>
