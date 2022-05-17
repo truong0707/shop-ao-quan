@@ -23,6 +23,7 @@ import CartState from "./store/cart/CartState";
 import CartDrawer from "./components/reuseComponents/cartDrawer/CartDrawer";
 import PostBlogDetail from "./pages/PostBlogDetail";
 import Login from "../src/pages/Login";
+import Register from "./pages/Register";
 import './App.css';
 // import { useSelector } from "react-redux";
 
@@ -31,7 +32,7 @@ function App() {
   /* check user */
   // const user = useSelector((state) => state.userLogin.loading);
   const getuser = localStorage.getItem("userInfo");
-  const [user, setUser] = useState(false);
+  const [user, setUser] = useState(true);
 
   useEffect(() => {
     setUser(true)
@@ -86,6 +87,7 @@ function App() {
               <Route exact path="/signup" element={user ? <Navigate to='/profile' /> : <Login />} />
               <Route exact path="/detail-product/:productId" element={user ? <DetailProduct /> : <Navigate to='/login' />} />
               <Route exact path="/Blog/:ParamNameProduct" element={user ? <PostBlogDetail /> : <Navigate to='/login' />} />
+              <Route exact path="/register" element={<Register />} />
             </Routes>
           </div>
         </Router>

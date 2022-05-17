@@ -28,6 +28,7 @@ const Login = () => {
         }
     }, [userInfo, navigate , redirect])
 
+    // handle submit
     const submitHandler = (e) => {
         e.preventDefault()
         dispatch(login(email, password))

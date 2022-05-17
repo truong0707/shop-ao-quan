@@ -2,12 +2,13 @@ import { applyMiddleware, createStore, combineReducers } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension"; // use tool of redux
 import thunk from "redux-thunk";
 import { productDetailReduder, productListReduder } from "../redux/reducers/ProductReducers"; // use các reducer
-import { userLoginReduder } from "./reducers/userReducers";
+import { userLoginReduder, userRegisterReduder } from "./reducers/userReducers";
 
 
 const reducer = combineReducers({
     productList: productListReduder, // reducer of product list 
     userLogin: userLoginReduder,  // reducer of userLogin
+    userRegister: userRegisterReduder,
     productDetail: productDetailReduder, 
 })
 

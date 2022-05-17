@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-/* LOGIN */
+/* FORM */
 .login-center {
     padding: 50px 0;
 }
@@ -35,7 +35,7 @@
     margin-top: 20px;
     padding: 20px 0;
     border: 0;
-    background-color: #1cb803;
+    background-color: #009E7F;
     border-radius: 5px;
     text-transform: uppercase;
     color: white;
