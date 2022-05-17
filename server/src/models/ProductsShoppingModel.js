@@ -1,33 +1,42 @@
 const monggose = require("mongoose"); // use library mongoose
 const Schema = monggose.Schema; // use Schema of mongoose
 
-// init Schema CardProduct
-const CardProduct = Schema({
-    nameCard: {
+// init Schema CProduct
+const ProductShopping = Schema({
+    nameProduct: {
         type: String,
         required: true,
     },
-    imgCard: {
+    imgProduct: {
         type: String,
         required: true,
         trim: true,
     },
-    descriptionCard: {
+    descriptionProduct: {
         type: String,
         required: true,
     },
-    Price: {
+    PriceProduct: {
         type: Number,
         required: true,
     },
     vote: {
         type: Number,
     },
+    resources: {
+        type: String,
+    },
+    quantity: {
+        type: Number,
+        required: true,
+    },
+    inputDate: {
 
+    }
 },
     {
         timestamps: true
     }
 );
 
-module.exports = monggose.model('cardsProduct', CardProduct)
+module.exports = monggose.model('productShopping', ProductShopping);

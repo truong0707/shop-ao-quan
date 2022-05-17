@@ -3,7 +3,7 @@ const { generateToken } = require('../utils/generateToken.js');
 
 // user login
 let postUser = async (req, res) => {
-    const { email, password } = req.body
+    const { email, password } = req.body;
     const user = await User.findOne({ email })
 
     if (user && (await user.matchPassword(password))) {
@@ -16,7 +16,7 @@ let postUser = async (req, res) => {
             createAt: user.createAt,
         }) // dữ liệu trả về
     } else {
-        res.status(401)
+        res.status(401) 
         throw new Error("Thông tin không đúng!")
     }
 }
@@ -43,7 +43,6 @@ const getProfile = async (req, res) => {
 // register
 const postRegister = async (req, res) => {
     const { name, email, password } = req.body;
-
     const userExits = await User.findOne({ email });
 
     if (userExits) {

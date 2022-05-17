@@ -1,4 +1,5 @@
 const CardProductModel = require('../models/CardProductsModel');
+const ProductsShoppingModel = require('../models/ProductsShoppingModel');
 
 
 // get all product
@@ -28,6 +29,8 @@ const getProductById = async (req, res) => {
         const productDetail = await CardProductModel.find({
             '_id' : { $in: id }   
         });
+
+
         return res.status(200).json({ success: "get product detail ok", productDetail });
 
     } catch (e) {
@@ -44,7 +47,7 @@ const getProductById = async (req, res) => {
 let postAllProductCards = async (req, res) => {
     const { imgCard, nameCard, descriptionCard, Price, resources, vote } = req.body
 
-    if (!nameCard) return res.status(400).json({ success: false, message: "Card must have name " }); // ko thực thi đc thì do lỗi client
+    if (!nameCard) return res.status(400).json({ success: false, message: "Card must have name " });
     try {
         const newCardProduct = new CardProductModel({
             nameCard,

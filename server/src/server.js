@@ -9,6 +9,7 @@ const initWebRoute = require('./route/web');
 const initProductHome = require('./route/ProductHomeRoutes');
 const initApiCardBlog = require('./route/ApiProductsBlog');
 const initUserRoutes = require('./route/UserRoutes');
+const initCardShopping = require('./route/ProductShopping');
 
 const app = express(); // khởi tạo app từ express
 const port = process.env.PORT; // sử dụng PORT ở file .env
@@ -43,6 +44,8 @@ initWebRoute(app) // gọi hàm initWebRote
 initProductHome(app) // init api productCard
 initApiCardBlog(app)
 initUserRoutes(app)
+initCardShopping(app)
+
 
 
 
