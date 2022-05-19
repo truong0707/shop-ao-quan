@@ -56,7 +56,7 @@ const Register = () => {
                         </Link>
                     </p>
                 </form>
-            </div>
+            </div>  
         </>
     );
 };

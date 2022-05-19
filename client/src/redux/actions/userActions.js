@@ -33,7 +33,7 @@ export const logout = () => (dispatch) => {
     localStorage.removeItem("userInfo");
     dispatch({ type: USER_LOGOUT });
     document.location.href = "/login";
-    alert("bye User")
+    alert("bye user")
 }
 
 
@@ -53,6 +53,7 @@ export const register = (name, email, password) => async (dispatch) => {
 
         /// save localStorage
         localStorage.setItem("userInfo", JSON.stringify(data))
+        alert("Chào mừng bạn đã đến với trang web của tôi, để chỉnh sửa profile, bạn click vào avata hoặc tên của minh !")
 
     } catch (error) {
         dispatch({

@@ -22,6 +22,10 @@ export default function NavBar(props) {
     const handleLogout = () => {
         dispatch(logout())
     }
+    // click Show profile
+    const handleclickProfile = () => {
+        
+    }
 
     return (
         <>
@@ -34,7 +38,6 @@ export default function NavBar(props) {
 
                     {/* LOGO Nav */}
                     <div style={{ marginLeft: "15px" }}><Link className="toolbar__logo" to="/"><b>Logo</b></Link></div>
-
 
                     <div className="spacer"></div>
 
@@ -64,7 +67,6 @@ export default function NavBar(props) {
                     </div>
                     <div className="spacer"></div>
 
-
                     <div>
                         <ul>
                             <li style={{ marginTop: '12px', listStyle: 'none' }} className='item__bar__card' >
@@ -77,19 +79,23 @@ export default function NavBar(props) {
                         </ul>
                     </div>
 
-
                     <div className="toolbar__navigation-user-store">
                         <ul>
                             {userInfo ? (
                                 <>
+                                    <Link to='/profile'>
+                                        <li style={{ width: '35px' }} className='profile item__bar' onClick={handleclickProfile}>
+                                            <img src='https://scontent.fdad3-5.fna.fbcdn.net/v/t39.30808-6/277791657_106083558732245_8190340676768010477_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BPQNhoKt-hIAX9HkOsG&_nc_ht=scontent.fdad3-5.fna&oh=00_AT9IlVP-h71OXWudKsvHhX5fUOPEhFfrQJMfbj_E5dZrhw&oe=62711985' alt='' className='avatar__user'></img>
+                                        </li>
+                                    </Link>
 
+                                    <Link style={{ textDecoration: 'none' }} to='/profile'>
+                                        <li style={{ minWidth: '100px', textAlign: 'center', alignItems: 'center', height: '50px' }} className='profile item__bar' onClick={handleclickProfile}>
+                                            Hi, {userInfo.name}
+                                        </li>
+                                    </Link>
 
-                                    <li style={{ width: '35px' }} className='profile item__bar '>
-                                        <img src='https://scontent.fdad3-5.fna.fbcdn.net/v/t39.30808-6/277791657_106083558732245_8190340676768010477_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BPQNhoKt-hIAX9HkOsG&_nc_ht=scontent.fdad3-5.fna&oh=00_AT9IlVP-h71OXWudKsvHhX5fUOPEhFfrQJMfbj_E5dZrhw&oe=62711985' alt='' className='avatar__user'></img>
-                                    </li>
-
-                                    <li style={{ minWidth: '100px', textAlign: 'center', alignItems: 'center', height: '50px' }} className='profile item__bar'>Hi, {userInfo.name}</li>
-                                    <Link to=''>
+                                    <Link style={{ textDecoration: 'none' }} to=''>
                                         <li className='profile item__bar' onClick={handleLogout}>
                                             logout
                                         </li>

@@ -1,9 +1,8 @@
-/* login  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif; 
 }
 /* FORM */
 .login-center {
@@ -65,7 +64,80 @@
 }
 
 /* detail page */
-.contentDetail {
+.content__product__detail { 
+    width: 88%;
+    margin-top: 70px;
+}
+.wrap__groupButton__detail {
+    display: flex;
+    width: 100%;
+}
+.wrap__groupButton__detail div {
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+}
+.wrap__groupButton__detail .button__buy__now {
+    margin-left: 10px;
+    border: 2px #666666 solid;
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.wrap__groupButton__detail .button__add__card {
+    display: flex;
+    border: 2px #009e7f solid;
+    display: flex;
+    color: #009e7f;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.button__check__shop {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background: #009e7f;
+    margin-top: 10px;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+.box__support__online {
+    width: 100%;
+    height: 100%;
+    border-top: 2px red solid;
+    border-bottom: 1px #F7F7F7 solid;
+    border-left: 1px #F7F7F7 solid;
+    border-right: 1px #F7F7F7 solid;
+}
+.box__support__online {
+    padding: 20px 20px 20px 20px;
+}
+.box__support__online p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.CS {
+    width: 100%;
+    height: 100%;
+    background-color: #009E7F;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+.cs {
+    padding: 15px 10px 0px;
+}
+.cs div{
+    color: #fff;
+    height: 100%;
+    background: orange;
+}
+
+/* .contentDetail {
     display: flex;
     padding-top: 50px;
     width: 85%;
@@ -106,7 +178,7 @@
     margin-top: 10px;
     color: #f0f0f0;
     cursor: pointer;
-}
+} */
 
 /* Blog page */
 .wrap__blog__page {
@@ -143,7 +215,6 @@
     font-size: 12px;
     font-weight: 600;
 }
-
 /*  */
 @keyframes load-page {
     0% {

@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import { useEffect, useState } from 'react';
+import { Navigate } from "react-router-dom";
 
 /* import components */
 import Home from "./pages/Home";
@@ -16,7 +17,6 @@ import Contacts from "./pages/Contacts";
 import NavBar from "./components/navbar/NavBar";
 import SideDrawer from "./components/reuseComponents/SideDrawer/SideDrawer";
 import BackDropNav from "./components/reuseComponents/BackDrop/BackDropNav";
-import { Navigate } from "react-router-dom";
 import DetailProduct from "./pages/DetailProduct";
 import CardProductState from "./store/cardProduct/CardProductState";
 import CartState from "./store/cart/CartState";
@@ -24,6 +24,7 @@ import CartDrawer from "./components/reuseComponents/cartDrawer/CartDrawer";
 import PostBlogDetail from "./pages/PostBlogDetail";
 import Login from "../src/pages/Login";
 import Register from "./pages/Register";
+import Profile from "./pages/Profile";
 import './App.css';
 // import { useSelector } from "react-redux";
 
@@ -84,10 +85,11 @@ function App() {
               <Route exact path="/news" element={<News />} />
               <Route exact path="/contacts" element={<Contacts />} />
               <Route exact path="/login" element={<Login />} />
+              <Route exact path="/register" element={<Register />} />
               <Route exact path="/signup" element={user ? <Navigate to='/profile' /> : <Login />} />
               <Route exact path="/detail-product/:productId" element={user ? <DetailProduct /> : <Navigate to='/login' />} />
               <Route exact path="/Blog/:ParamNameProduct" element={user ? <PostBlogDetail /> : <Navigate to='/login' />} />
-              <Route exact path="/register" element={<Register />} />
+              <Route exact path="/profile" element={<Profile />} />
             </Routes>
           </div>
         </Router>

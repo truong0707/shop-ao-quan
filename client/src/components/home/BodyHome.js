@@ -88,8 +88,7 @@ export default function BodyHome() {
                             {/* btn shop now */}
                             <Button
                                 classbtnType='button-shop-now-body-home'
-                                contentButton='Shop now'
-                            />
+                                contentButton='Shop now'/>
                         </div>
 
                         <div className="card" style={{ width: '360px', marginLeft: '20px', marginRight: 'auto', borderRadius: '0px' }}>
@@ -99,9 +98,8 @@ export default function BodyHome() {
                             </div>
                             <Button
                                 classbtnType='button-shop-now-body-home'
-                                contentButton='Shop now'
-                            />
-                        </div>  
+                                contentButton='Shop now'/>
+                        </div>
 
                         <div className="card" style={{ width: '360px', marginLeft: '20px', marginRight: 'auto', borderRadius: '0px' }}>
                             <img src="https://cdn.shopify.com/s/files/1/0071/4755/2866/files/custom-block-3-compressor_800x_crop_center.jpg?v=1541556068" className="card-img-top" alt="..." />
@@ -110,8 +108,7 @@ export default function BodyHome() {
                             </div>
                             <Button
                                 classbtnType='button-shop-now-body-home'
-                                contentButton='Shop now'
-                            />
+                                contentButton='Shop now'/>
                         </div>
                     </div>
                 </div>
