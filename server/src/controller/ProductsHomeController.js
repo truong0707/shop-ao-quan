@@ -30,7 +30,6 @@ const getProductById = async (req, res) => {
             '_id' : { $in: id }   
         });
 
-
         return res.status(200).json({ success: "get product detail ok", productDetail });
 
     } catch (e) {

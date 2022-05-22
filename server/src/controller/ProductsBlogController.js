@@ -39,7 +39,6 @@ let postProductBlog = async (req, res) => {
 const getProductByName = async (req, res) => {
     try {
         const name = req.query.id;
-
         if (!name) {
             return res.status(500).json({
                 errCode: 1,
