@@ -26,18 +26,27 @@ import Login from "../src/pages/Login";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile";
 import './App.css';
-// import { useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 
-function App() {
+  function App() {
   /* check user */
-  // const user = useSelector((state) => state.userLogin.loading);
-  const getuser = localStorage.getItem("userInfo");
-  const [user, setUser] = useState(true);
+  // const getuser = localStorage.getItem("userInfo");
+  const [user, setUser] = useState(false);
+  const getuser =  useSelector((state) => state.userLogin.loading);
+  
 
   useEffect(() => {
-    setUser(true)
-  }, [getuser])
+    if (getuser) {
+      setUser(true)
+    } else {
+      setUser(false)
+    }
+    console.log(user)
+
+  }, [getuser, user])
+  console.log(user)
+
 
 
   /* xử lý đóng mở thanh menu nav */
