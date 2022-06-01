@@ -26,7 +26,7 @@ export default function CardProduct(props) {
     return (
         <Link className={animation} style={{ textDecoration: 'none' }} to={`/detail-product/${props.productId}`}>
             <div className="card-product-body">
-                <img style={{ maxHeight: '240px' }} src={props.imageCard} className="card-img-top" alt="..." />
+                <img src={props.imageCard} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <p className="card-title">{props.nameCard}</p>
                     <p className="card-text">{props.descriptionCard}</p>

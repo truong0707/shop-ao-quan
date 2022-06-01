@@ -33,19 +33,19 @@ import { useSelector } from "react-redux";
   /* check user */
   // const getuser = localStorage.getItem("userInfo");
   const [user, setUser] = useState(false);
-  const getuser =  useSelector((state) => state.userLogin.loading);
+  const getuser =  useSelector((state) => state.userLogin.userInfo);
+  // console.log(getuser)
   
 
   useEffect(() => {
-    if (getuser) {
-      setUser(true)
-    } else {
+    if (getuser == null && getuser == undefined) {
       setUser(false)
+    } else {
+      setUser(true)
     }
     console.log(user)
 
   }, [getuser, user])
-  console.log(user)
 
 
 

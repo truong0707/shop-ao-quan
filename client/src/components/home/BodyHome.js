@@ -25,8 +25,8 @@ export default function BodyHome() {
 
 
     const handleShowMoreCard = () => {
-        if (limit > 5) {
-            alert("Hết hàng rồi ba :((")
+        if (limit > products.length) {
+            alert("Hàng trong kho đã hết")
         } else {
             setLimit(pre => pre + 4)
         }
@@ -36,20 +36,10 @@ export default function BodyHome() {
     return (
         <>
             <div className='body__home__page'>
-                <div className='container-fluid content__body__home'>
+                <div className='wrapper__content__home'>
                     <div style={{ marginTop: "40px" }}>
-                        <BoxTitle
-                            nameBox="LATEST PRODUCTS"
-                            line="________________"
-                            contentBox1="Lorem ipsum dolor sit amet, consectetur"
-                            contentBox2="adipiscin lorem solo tempor incididunt ut labore et"
-                            styleCard={{ textAlign: "center" }}
-                        />
+                        <BoundaryLineText />
                     </div>
-
-
-                    {/*  Card Product Body Home  */}
-                    <div>xxssssssssssssssssssssssssssssss</div>
                     <div className="list-products-body-home">
                         {
                             loading ? ("loading...") : error ? ("errror") : (
@@ -67,7 +57,6 @@ export default function BodyHome() {
                             )
                         }
                     </div>
-
                     {/*  Button load card Body home */}
                     <Button
                         classbtnType='button-loat-cards-body-home'
@@ -75,11 +64,12 @@ export default function BodyHome() {
                         contentButton='Load more' />
                 </div>
 
+
                 {/* Product 2 */}
-                <div className='container-fluid content__body__home'>
+                <div className='wrapper__content__home'>
                     <BoundaryLineText />
-                    <div style={{ display: 'flex', flexWrap: 'wrap', width: '100%' }}>
-                        <div className="card" style={{ width: '360px', marginLeft: '20px', marginRight: 'auto', borderRadius: '0px' }}>
+                    <div className='img__Featured'>
+                        <div className="card" >
                             <img src="https://cdn.shopify.com/s/files/1/0071/4755/2866/files/custom-block-1-compressor_800x_crop_center.jpg?v=1541556010" className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -88,59 +78,78 @@ export default function BodyHome() {
                             {/* btn shop now */}
                             <Button
                                 classbtnType='button-shop-now-body-home'
-                                contentButton='Shop now'/>
+                                contentButton='Shop now' />
                         </div>
 
-                        <div className="card" style={{ width: '360px', marginLeft: '20px', marginRight: 'auto', borderRadius: '0px' }}>
+                        <div className="card" >
                             <img src="https://cdn.shopify.com/s/files/1/0071/4755/2866/files/custom-block-2-compressor_800x_crop_center.jpg?v=1541556026" className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                             <Button
                                 classbtnType='button-shop-now-body-home'
-                                contentButton='Shop now'/>
+                                contentButton='Shop now' />
                         </div>
 
-                        <div className="card" style={{ width: '360px', marginLeft: '20px', marginRight: 'auto', borderRadius: '0px' }}>
+                        <div className="card" >
                             <img src="https://cdn.shopify.com/s/files/1/0071/4755/2866/files/custom-block-3-compressor_800x_crop_center.jpg?v=1541556068" className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                             <Button
                                 classbtnType='button-shop-now-body-home'
-                                contentButton='Shop now'/>
+                                contentButton='Shop now' />
+                        </div>
+                    </div>
+                    <BoundaryLine />
+                </div>
+
+                <div className='wrapper__content__home'>
+                    <div style={{ marginTop: "40px" }}>
+                        <BoundaryLineText />
+                    </div>
+                    <div className="list-products-body-home">
+                        {
+                            loading ? ("loading...") : error ? ("errror") : (
+                                <>
+                                    {products.slice(0, limit).map((card) => (
+                                        <CardProduct
+                                            key={card._id}
+                                            productId={card._id}
+                                            imageCard={card.imgCard}
+                                            nameCard={card.nameCard}
+                                            descriptionCard={card.descriptionCard}
+                                        />
+                                    ))}
+                                </>
+                            )
+                        }
+                    </div>
+                    {/*  Button load card Body home */}
+                    <Button
+                        classbtnType='button-loat-cards-body-home'
+                        handleButton={handleShowMoreCard}
+                        contentButton='Load more' />
+                </div>
+
+
+                <div style={{ width: '91%', margin: 'auto' }}>
+                    <div className='content__body__home'>
+                        <div className='wrap__slider__product'>
+                            <SliderProduct />
+                            <Button
+                                classbtnType='button-loat-cards-body-home'
+                                contentButton='VIEW GALLERY'
+                            />
                         </div>
                     </div>
                 </div>
 
-                <BoundaryLine />
 
                 {/* image content */}
                 <img style={{ height: '460px', width: '100%', marginTop: '20px' }} src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/banner-1-compressor_1920x.jpg?v=1541390762' alt='' />
-
-                {/* <div style={{ marginTop: "25px" }}>
-                    <BoxTitle
-                        nameBox="LATEST PRODUCTS"
-                        line="________________"
-                        contentBox1="Lorem ipsum dolor sit amet, consectetur"
-                        contentBox2="adipiscin lorem solo tempor incididunt ut labore et"
-                        styleCard={{ textAlign: "center" }}
-                    />
-                </div> */}
-
-                <div className='container-fluid content__body__home'>
-                    <BoundaryLine />
-
-                    <div className='container-fluid wrap__slider__product'>
-                        <SliderProduct />
-                        <Button
-                            classbtnType='button-loat-cards-body-home'
-                            contentButton='VIEW GALLERY'
-                        />
-                    </div>
-                </div>
-
             </div>
         </>
     )
 }
+

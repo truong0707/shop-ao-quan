@@ -51,16 +51,31 @@
 
 /* Body Home */
 .body__home__page {
-    width: 100%
+    width: 100%;
 }
+.wrapper__content__home {
+    width: 90%;
+    margin: auto;
+}
+.img__Featured {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.img__Featured .card {
+    width: 390px;
+    border-radius: 0;
+
+    /* style={{ width: '360px', borderRadius: '0px' }} */
+}
+
+
 .list-products-body-home {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-.content__body__home {
-    width: 94%;
-}
-
 
 /* / */
 
