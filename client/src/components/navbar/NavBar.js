@@ -105,7 +105,7 @@ export default function NavBar(props) {
                             ) : (
                                 <>
                                     <Link style={{ width: '100px', textAlign: 'center', alignItems: 'center', height: '50px', display: 'flex' }} className="item__bar" to="/login"><p style={{ margin: 'auto' }}>Đăng Nhập</p></Link>
-                                    <Link style={{ width: '80px', textAlign: 'center', alignItems: 'center', height: '50px', display: 'flex' }} className="item__bar" to="/signup"><p style={{ margin: 'auto' }}>Đăng Ký</p></Link>
+                                    <Link style={{ width: '80px', textAlign: 'center', alignItems: 'center', height: '50px', display: 'flex' }} className="item__bar" to="/register?redirect=/"><p style={{ margin: 'auto' }}>Đăng Ký</p></Link>
                                 </>
                             )}
                         </ul>

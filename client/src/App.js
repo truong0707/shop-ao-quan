@@ -91,7 +91,7 @@ import { useSelector } from "react-redux";
               <Route exact path="*" element={<NotFound />} />
               <Route exact path="/shop" element={<Shop />} />
               <Route exact path="/blog" element={<Blog />} />
-              <Route exact path="/news" element={<News />} />
+              {/* <Route exact path="/news" element={<News />} /> */}
               <Route exact path="/contacts" element={<Contacts />} />
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/register" element={<Register />} />
