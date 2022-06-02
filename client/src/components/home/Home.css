@@ -4,6 +4,15 @@
     padding-top: 70px;
     margin: auto;
 }
+.box__trademark {
+    display: flex;
+    justify-content: space-between;
+}
+.box__trademark  div {
+    width: 200px;
+    height: 80px;
+    background: pink;
+} 
 .box-list-product-header-home {
     display: flex;
     width: 100%;

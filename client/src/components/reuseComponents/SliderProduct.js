@@ -64,82 +64,72 @@ export default class SliderProduct extends Component {
                     <div className="wrap__item__slider">
                         <div className="card__product card">
                             <img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/6-min_640x.jpg?v=1586162770' className="card-img-top" alt="..." />
-                            <div className="card-body">
+                            {/* <div className="card-body">
                                 <p style={{ fontSize: '10px', height: '25px', marginTop: '10px' }} className="card-text">T</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
                     <div className="wrap__item__slider">
                         <div className="card__product card">
                             <img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/6-min_640x.jpg?v=1586162770' className="card-img-top" alt="..." />
-                            <div className="card-body">
+                            {/* <div className="card-body">
                                 <p style={{ fontSize: '10px', height: '25px', marginTop: '10px' }} className="card-text">T</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
                     <div className="wrap__item__slider">
                         <div className="card__product card">
                             <img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/6-min_640x.jpg?v=1586162770' className="card-img-top" alt="..." />
-                            <div className="card-body">
+                            {/* <div className="card-body">
                                 <p style={{ fontSize: '10px', height: '25px', marginTop: '10px' }} className="card-text">T</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
                     <div className="wrap__item__slider">
                         <div className="card__product card">
                             <img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/6-min_640x.jpg?v=1586162770' className="card-img-top" alt="..." />
-                            <div className="card-body">
+                            {/* <div className="card-body">
                                 <p style={{ fontSize: '10px', height: '25px', marginTop: '10px' }} className="card-text">T</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
                     <div className="wrap__item__slider">
                         <div className="card__product card">
                             <img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/6-min_640x.jpg?v=1586162770' className="card-img-top" alt="..." />
-                            <div className="card-body">
+                            {/* <div className="card-body">
                                 <p style={{ fontSize: '10px', height: '25px', marginTop: '10px' }} className="card-text">T</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
                     <div className="wrap__item__slider">
                         <div className="card__product card">
                             <img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/6-min_640x.jpg?v=1586162770' className="card-img-top" alt="..." />
-                            <div className="card-body">
+                            {/* <div className="card-body">
                                 <p style={{ fontSize: '10px', height: '25px', marginTop: '10px' }} className="card-text">T</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
                     <div className="wrap__item__slider">
                         <div className="card__product card">
                             <img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/6-min_640x.jpg?v=1586162770' className="card-img-top" alt="..." />
-                            <div className="card-body">
+                            {/* <div className="card-body">
                                 <p style={{ fontSize: '10px', height: '25px', marginTop: '10px' }} className="card-text">T</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
                     <div className="wrap__item__slider">
                         <div className="card__product card">
                             <img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/6-min_640x.jpg?v=1586162770' className="card-img-top" alt="..." />
-                            <div className="card-body">
+                            {/* <div className="card-body">
                                 <p style={{ fontSize: '10px', height: '25px', marginTop: '10px' }} className="card-text">T</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className="wrap__item__slider">
-                        <div className="card__product card">
-                            <img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/6-min_640x.jpg?v=1586162770' className="card-img-top" alt="..." />
-                            <div className="card-body">
-                                <p style={{ fontSize: '10px', height: '25px', marginTop: '10px' }} className="card-text">T</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
@@ -147,9 +137,9 @@ export default class SliderProduct extends Component {
                     <div className="wrap__item__slider">
                         <div className="card__product card">
                             <img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/6-min_640x.jpg?v=1586162770' className="card-img-top" alt="..." />
-                            <div className="card-body">
+                            {/* <div className="card-body">
                                 <p style={{ fontSize: '10px', height: '25px', marginTop: '10px' }} className="card-text">T</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
@@ -157,45 +147,55 @@ export default class SliderProduct extends Component {
                     <div className="wrap__item__slider">
                         <div className="card__product card">
                             <img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/6-min_640x.jpg?v=1586162770' className="card-img-top" alt="..." />
-                            <div className="card-body">
+                            {/* <div className="card-body">
                                 <p style={{ fontSize: '10px', height: '25px', marginTop: '10px' }} className="card-text">T</p>
-                            </div>
+                            </div> */}
+                        </div>
+                    </div>
+
+
+                    <div className="wrap__item__slider">
+                        <div className="card__product card">
+                            <img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/6-min_640x.jpg?v=1586162770' className="card-img-top" alt="..." />
+                            {/* <div className="card-body">
+                                <p style={{ fontSize: '10px', height: '25px', marginTop: '10px' }} className="card-text">T</p>
+                            </div> */}
                         </div>
                     </div>
 
                     <div className="wrap__item__slider">
                         <div className="card__product card">
                             <img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/5-min_640x.jpg?v=1586162763' className="card-img-top" alt="..." />
-                            <div className="card-body">
+                            {/* <div className="card-body">
                                 <p style={{ fontSize: '10px', height: '25px', marginTop: '10px' }} className="card-text">T</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
                     <div className="wrap__item__slider">
                         <div className="card__product card">
                             <img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/5-min_640x.jpg?v=1586162763' className="card-img-top" alt="..." />
-                            <div className="card-body">
+                            {/* <div className="card-body">
                                 <p style={{ fontSize: '10px', height: '25px', marginTop: '10px' }} className="card-text">T</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
                     <div className="wrap__item__slider">
                         <div className="card__product card">
                             <img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/5-min_640x.jpg?v=1586162763' className="card-img-top" alt="..." />
-                            <div className="card-body">
+                            {/* <div className="card-body">
                                 <p style={{ fontSize: '10px', height: '25px', marginTop: '10px' }} className="card-text">T</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
                     <div className="wrap__item__slider">
                         <div className="card__product card">
                             <img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/5-min_640x.jpg?v=1586162763' className="card-img-top" alt="..." />
-                            <div className="card-body">
+                            {/* <div className="card-body">
                                 <p style={{ fontSize: '10px', height: '25px', marginTop: '10px' }} className="card-text">T</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </Slider>

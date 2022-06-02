@@ -36,10 +36,20 @@ export default function BodyHome() {
     return (
         <>
             <div className='body__home__page'>
+                {/* trademark */}
                 <div className='wrapper__content__home'>
-                    <div style={{ marginTop: "40px" }}>
-                        <BoundaryLineText />
+                <BoundaryLineText />
+                    <div className='box__trademark'>
+                        <div><img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/brand-1-compressor_250x.jpg?v=1541560760' style={{width: '100%', height:'100%'}} /></div>
+                        <div><img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/brand-2-compressor_250x.jpg?v=1541560776' style={{width: '100%', height:'100%'}} /></div>
+                        <div><img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/brand-3-compressor_250x.jpg?v=1541560797' style={{width: '100%', height:'100%'}} /></div>
+                        <div><img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/brand-5-compressor_250x.jpg?v=1541560823' style={{width: '100%', height:'100%'}} /></div>
+                        <div><img src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/brand-4-compressor_250x.jpg?v=1541560806' style={{width: '100%', height:'100%'}} /></div>
                     </div>
+                </div>
+
+                <div className='wrapper__content__home'>
+                <BoundaryLine/>
                     <div className="list-products-body-home">
                         {
                             loading ? ("loading...") : error ? ("errror") : (
@@ -101,7 +111,6 @@ export default function BodyHome() {
                                 contentButton='Shop now' />
                         </div>
                     </div>
-                    <BoundaryLine />
                 </div>
 
                 <div className='wrapper__content__home'>
@@ -132,6 +141,8 @@ export default function BodyHome() {
                         contentButton='Load more' />
                 </div>
 
+                {/* image content */}
+                <img style={{ height: '400px', width: '100%', marginTop: '20px' }} src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/banner-1-compressor_1920x.jpg?v=1541390762' alt='' />
 
                 <div style={{ width: '91%', margin: 'auto' }}>
                     <div className='content__body__home'>
@@ -144,10 +155,6 @@ export default function BodyHome() {
                         </div>
                     </div>
                 </div>
-
-
-                {/* image content */}
-                <img style={{ height: '460px', width: '100%', marginTop: '20px' }} src='https://cdn.shopify.com/s/files/1/0071/4755/2866/files/banner-1-compressor_1920x.jpg?v=1541390762' alt='' />
             </div>
         </>
     )
