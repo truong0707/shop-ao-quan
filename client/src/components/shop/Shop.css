@@ -1,25 +1,35 @@
 .content__body__shop {
     width: 100%;
     margin-top: 70px;
+    margin: auto;
 }
 .title_item_category {
     margin: auto;
 }
 .content__body__shop {
     display: flex;
-    width: 94%;
-    padding-right: 10px;
-    /* background: red; */
+    width: 90%;
+    margin-top: 40px;
 
+}
+.card__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card__content .card {
+    width: 14rem;
+    margin-top: 10px;
 }
 /*  */
 .wrap__top__category {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 40px;   
+    margin-top: 40px;
 }
 .wrap__top__category .item__category {
-    width: 240px;
+    width: 234px;
     height: 112px;
     background: #F7F7F7;
     margin-right: 10px;
