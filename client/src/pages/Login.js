@@ -35,7 +35,7 @@ const Login = () => {
     }
 
     return (
-        <>
+        <>  
             <p style={{ height: '60px' }}></p>
             <div className="container d-flex flex-column justify-content-center align-items-center login-center">
                 {error && <Error/> }
@@ -43,12 +43,12 @@ const Login = () => {
                 <form className="Login col-md-8 col-lg-4 col-11" onClick={submitHandler} >
                     <input
                         type="email"
-                        placeholder="truongnguyendep@gmail.com"
+                        placeholder="Email"
                         onChange={(e) => setEmail(e.target.value)}
                     />
                     <input
                         type="password"
-                        placeholder="19062001"
+                        placeholder="Password"
                         onChange={(e) => setPassword(e.target.value)}
                     />
                     <button type="submit">Đăng Nhập</button>

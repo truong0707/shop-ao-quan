@@ -50,6 +50,7 @@ export const register = (name, email, password) => async (dispatch) => {
         const { data } = await axios.post(`http://localhost:8080/api/v1/register`, {name, email, password }, config)
         dispatch({ type: USER_REGISTER_SUCCESS, payload: data });
         dispatch({ type: USER_LOGIN_SUCCESS, payload: data })
+        
 
         /// save localStorage
         localStorage.setItem("userInfo", JSON.stringify(data))

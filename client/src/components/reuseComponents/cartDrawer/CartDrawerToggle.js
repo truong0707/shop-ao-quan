@@ -11,7 +11,7 @@ export default function CartDrawerToggle() {
     
     return (
         <>
-            <p style={{fontSize: "20px", color:'#009E7F'}}  ><FaShoppingCart onClick={showHideCart} /> </p>
+            <p style={{fontSize: "20px", color:'#fff'}}  ><FaShoppingCart onClick={showHideCart} /> </p>
         </>
     )
 }

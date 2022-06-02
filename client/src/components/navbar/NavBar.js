@@ -85,7 +85,7 @@ export default function NavBar(props) {
                                 <>
                                     <Link to='/profile'>
                                         <li style={{ width: '35px' }} className='profile item__bar' onClick={handleclickProfile}>
-                                            <img src='https://scontent.fdad3-5.fna.fbcdn.net/v/t39.30808-6/277791657_106083558732245_8190340676768010477_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BPQNhoKt-hIAX9HkOsG&_nc_ht=scontent.fdad3-5.fna&oh=00_AT9IlVP-h71OXWudKsvHhX5fUOPEhFfrQJMfbj_E5dZrhw&oe=62711985' alt='' className='avatar__user'></img>
+                                            <img src='https://avatars.githubusercontent.com/u/70809618?s=400&u=4fa5bdd589e6f6bb0f6377be69ba8146f75d389b&v=4' alt='' className='avatar__user'></img>
                                         </li>
                                     </Link>
 

@@ -10,7 +10,7 @@
     --nav-link-load-time: 500ms;
     position: fixed;
     width: 100%;
-    background-color: #fff;
+    background-color: #000;
     height: 50px;
     left: 0;
     top: 0;
@@ -21,7 +21,7 @@
     animation: nav-load var(--nav-load-time) ease-in; /* đặt tên cho animation  */ /*  tốc đọ trượt */
 }
 .toolbar__logo {
-    color: #009e7f;
+    color: #fff;
     text-decoration: none;
     font-size: 1.5rem;
 }
@@ -32,7 +32,7 @@
     padding: 0;
 }
 .toolbar__navigation-items ul li {
-    line-height: 50px;
+    line-height: 30px;
     width: 85px;
     text-align: center;
     animation-name: nav-link-load;
@@ -44,25 +44,17 @@
     transform: scale(0);
 }
 .toolbar__navigation-items ul li:hover {
-    background: #009e7f;
-}
-.toolbar__navigation-items ul .item__bar:hover {
-    color: #fff;
-    background: #009e7f;
+    border-bottom: 1px solid #fff ;
 }
 .toolbar__navigation-items li {
     padding: 0 0.5rem;
 }
 .toolbar__navigation-items ul .item__bar {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 13px;
 }
-/* .toolbar__navigation-items ul .item__bar:hover {
-    color: red;
-
-} */
 .spacer {
     width: 25%;
 }
@@ -70,7 +62,7 @@
 /* icon hiển thị thanh kẹp */
 .icon-drawer {
     font-size: 20px;
-    color: #000;
+    color: #fff;
 }
 
 .toolbar__navigation-user-store ul {
@@ -91,7 +83,7 @@
 }
 
 .toolbar__navigation-user-store ul .item__bar {
-    color: #009e7f;
+    color: #fff;
     text-decoration: none;
 }
 .toolbar__navigation-user-store ul .item__bar:hover {

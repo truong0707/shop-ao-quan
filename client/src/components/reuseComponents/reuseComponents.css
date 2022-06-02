@@ -103,7 +103,8 @@
     background: #fff;
     cursor: pointer;
     font-size: 13px;
-    margin-top: 20px;    
+    margin-top: 20px;
+    position: relative;    
 }
 .card-product-body img {
     height: 250px;
@@ -119,21 +120,30 @@
     transform: scale(1.04);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
-
-
+div.card-product-body:hover + div.button-buy-card {
+    display: block;
+}
+.button-buy-card:hover {
+    display: block;
+}
 
 .button-buy-card {
-    width: 65px;
-    border-radius: 4px;
-    height: 35px;
-    background: #7FAD39;
+    width: 150px;
+    height: 30px;
+    background: #fff;
+    border: 1px #000 solid; 
     text-align: center;
-    color: #fff;
+    color: #000;
     display: flex;
-    margin: 10px;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    font-weight: 700;
+    display: none;
+    font-size: 14px;
 }
 .button-buy-card p {
-    margin: auto;
+    margin-top: 4px;
 }
 
 /* Slider product */
@@ -190,7 +200,7 @@
 
 @media only screen and (max-width: 46.1875em)  {
     .card-product-body {
-        width: 150px;
+        width: 170px;
         margin-left: 10px;
         margin-top: 20px;
 

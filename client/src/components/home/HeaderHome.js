@@ -25,7 +25,7 @@ export default function HeaderHome() {
     }
 
     return (
-        <div style={{paddingTop:'90px', width:'94%'}} className="container-fluid header-home-page">
+        <div className="header-home-page">
             {/* List product type */}
             <div className="box-list-product-header-home">
                 <ListTypeProduct

@@ -31,12 +31,8 @@ export default function CardProduct(props) {
                     <p className="card-title">{props.nameCard}</p>
                     <p className="card-text">{props.descriptionCard}</p>
                 </div>
-
-                <div style={{ display: 'flex' }} >
-                    <div className="button-buy-card" /* onClick={() => addToCart(props)} */><p>Buy now</p></div>
-                </div>
-
             </div>
+            <div className="button-buy-card" /* onClick={() => addToCart(props)} */><p>ADD TO CART</p></div>
         </Link>
 
     )
